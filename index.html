@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neobrutalist Portfolio</title>
+    <script src="https://tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#000000',
+                    },
+                    boxShadow: {
+                        brutal: '8px 8px 0px 0px #FFFFFF',
+                        brutalSm: '4px 4px 0px 0px #FFFFFF',
+                        brutalHover: '12px 12px 0px 0px #FFFFFF',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .brutal-card {
+            background-color: #000000;
+            border: 4px solid #FFFFFF;
+            transition: all 0.2s ease;
+        }
+        .brutal-card:hover {
+            transform: translate(-4px, -4px);
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-white font-mono min-h-screen p-6 md:p-12">
+
+    <!-- Header Section -->
+    <header class="max-w-6xl mx-auto mb-16 border-b-4 border-white pb-8 flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+        <div>
+            <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tighter">
+                NEO_BRUTAL
+            </h1>
+            <p class="text-xl mt-4 max-w-md text-zinc-400">
+                A dark, high-contrast digital archive built with raw layouts and sharp typography.
+            </p>
+        </div>
+        <div class="brutal-card shadow-brutalSm px-6 py-3 font-bold text-lg uppercase tracking-wider">
+            Available for Freelance
+        </div>
+    </header>
+
+    <!-- Portfolio Grid -->
+    <main class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-black uppercase mb-10 inline-block bg-white text-black px-4 py-1 transform -rotate-1">
+            Selected Works
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <!-- Project 1 -->
+            <article class="brutal-card shadow-brutal hover:shadow-brutalHover p-4 flex flex-col justify-between">
+                <div>
+                    <!-- Image Placeholder -->
+                    <div class="w-full rounded-[24px] overflow-hidden border-2 border-white bg-zinc-900 relative" style="aspect-ratio: 283 / 400;">
+                        <img 
+                            src="assets/project-cyberpunk-streets.jpg" 
+                            alt="Project Cyberpunk Streets" 
+                            class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-300"
+                            loading="lazy"
+                        >
+                        <div class="absolute bottom-4 left-4 bg-black border border-white text-xs px-2 py-1 uppercase rounded">
+                            283 × 400
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-black uppercase mt-6 mb-2 tracking-tight">Cyberpunk Streets</h3>
+                    <p class="text-sm text-zinc-400 leading-relaxed">Experimental street photography documenting neon architectures and structural shadows.</p>
+                </div>
+                <div class="mt-6 pt-4 border-t-2 border-zinc-800 flex justify-between items-center">
+                    <span class="text-xs uppercase font-bold text-zinc-500">Photography / 2026</span>
+                    <a href="#" class="text-sm font-bold uppercase underline hover:no-underline">View Details ↗</a>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="brutal-card shadow-brutal hover:shadow-brutalHover p-4 flex flex-col justify-between">
+                <div>
+                    <!-- Image Placeholder -->
+                    <div class="w-full rounded-[24px] overflow-hidden border-2 border-white bg-zinc-900 relative" style="aspect-ratio: 283 / 400;">
+                        <img 
+                            src="assets/project-monolithic-ui.jpg" 
+                            alt="Project Monolithic UI" 
+                            class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-300"
+                            loading="lazy"
+                        >
+                        <div class="absolute bottom-4 left-4 bg-black border border-white text-xs px-2 py-1 uppercase rounded">
+                            283 × 400
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-black uppercase mt-6 mb-2 tracking-tight">Monolithic UI</h3>
+                    <p class="text-sm text-zinc-400 leading-relaxed">A stark, brutalist design system focused entirely on typographic hierarchy and heavy grids.</p>
+                </div>
+                <div class="mt-6 pt-4 border-t-2 border-zinc-800 flex justify-between items-center">
+                    <span class="text-xs uppercase font-bold text-zinc-500">Web Design / 2026</span>
+                    <a href="#" class="text-sm font-bold uppercase underline hover:no-underline">View Details ↗</a>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="brutal-card shadow-brutal hover:shadow-brutalHover p-4 flex flex-col justify-between">
+                <div>
+                    <!-- Image Placeholder -->
+                    <div class="w-full rounded-[24px] overflow-hidden border-2 border-white bg-zinc-900 relative" style="aspect-ratio: 283 / 400;">
+                        <img 
+                            src="assets/project-kinetic-type.jpg" 
+                            alt="Project Kinetic Type" 
+                            class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-300"
+                            loading="lazy"
+                        >
+                        <div class="absolute bottom-4 left-4 bg-black border border-white text-xs px-2 py-1 uppercase rounded">
+                            283 × 400
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-black uppercase mt-6 mb-2 tracking-tight">Kinetic Type</h3>
+                    <p class="text-sm text-zinc-400 leading-relaxed">Exploring motion design through massive bold fonts breaking past traditional layout barriers.</p>
+                </div>
+                <div class="mt-6 pt-4 border-t-2 border-zinc-800 flex justify-between items-center">
+                    <span class="text-xs uppercase font-bold text-zinc-500">Motion / 2026</span>
+                    <a href="#" class="text-sm font-bold uppercase underline hover:no-underline">View Details ↗</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="max-w-6xl mx-auto mt-24 pt-8 border-t-4 border-white flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-zinc-500">
+        <p>© 2026 NEO_BRUTAL. No Rights Reserved.</p>
+        <div class="flex gap-6">
+            <a href="#" class="hover:text-white uppercase font-bold">Twitter</a>
+            <a href="#" class="hover:text-white uppercase font-bold">GitHub</a>
+            <a href="#" class="hover:text-white uppercase font-bold">LinkedIn</a>
+        </div>
+    </footer>
+
+</body>
+</html>
